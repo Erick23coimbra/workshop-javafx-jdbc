@@ -3,13 +3,13 @@ package model.entities;
 import java.io.Serializable;
 
 public class Department implements Serializable {
-
+	
 	private static final long serialVersionUID = 1L;
-
 	private Integer id;
 	private String name;
 	
-	public Department() {
+	public Department () {
+		
 	}
 
 	public Department(Integer id, String name) {
@@ -33,6 +33,7 @@ public class Department implements Serializable {
 		this.name = name;
 	}
 
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -62,4 +63,6 @@ public class Department implements Serializable {
 	public String toString() {
 		return "Department [id=" + id + ", name=" + name + "]";
 	}
+	
+	
 }
